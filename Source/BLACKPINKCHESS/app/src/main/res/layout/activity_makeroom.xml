@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    >
+    <Button android:id="@+id/btn_start_server"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="100dp"
+        android:text="방 만들기"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:onClick="mOnClick"/>
+
+    <TextView android:id="@+id/socket_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="연결 정보"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/btn_start_server"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/number_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="접속 인원"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@+id/socket_information"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView android:id="@+id/socket_information_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IP주소"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_below="@+id/number_member"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView android:id="@+id/label_message_from_client"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="채팅"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@+id/btn_start_server"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp" />
+
+    <TextView android:id="@+id/text_massage_from_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/label_message_from_client"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/start_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_start_server"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:background="@color/mainPink"
+        android:onClick="mOnClick"
+        android:padding="30sp"
+        android:text="Start Game"
+        android:textSize="20sp" />
+</RelativeLayout>
